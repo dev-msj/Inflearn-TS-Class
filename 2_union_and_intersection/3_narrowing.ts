@@ -60,6 +60,7 @@ if (nullOrString) {
   nullOrString; // null로 유추됨
 }
 
+
 // 4. Equality Narrowing
 // type을 비교해 유추
 let numberOrString3: number | string = Math.random() > 0.5 ? 1123 : '윤하';
