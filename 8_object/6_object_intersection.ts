@@ -1,5 +1,7 @@
 /**
  * Object Intersection
+ * 
+ * 객체를 인터섹션해보자.
  */
 
 // 기존 primitive 타입은 never 타입을 뱉어낸다.
