@@ -1,5 +1,7 @@
 /**
  * Property Initialization
+ * 
+ * class의 property를 선언하는 다양한 방법
  */
 
 class Person {
