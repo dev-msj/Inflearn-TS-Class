@@ -42,8 +42,11 @@ console.log(child.shout('박보영', '홍길동'));
 
 
 /**
-* Property Override
-*/
+ * Property Override
+ * 
+ * Property Override 규칙
+ * 1) 더 넓은 타입에서 세부 타입으로 재정의가 가능하다.
+ */
 class PropertyParent{
   name: string;
 
@@ -53,7 +56,7 @@ class PropertyParent{
 }
 
 // class PropertyChild extends PropertyParent{
-//     name: number;
+//     name: number; // 부모 속성과 다른 타입이므로 에러 발생
 
 //     constructor(name: number){
 //         this.name = name;
@@ -69,7 +72,7 @@ class PropertyParent2 {
 }
 
 class PropertyChild2 extends PropertyParent2{
-  name: string;
+  name: string; // 부모 속성의 세부 타입을 사용
 
   constructor(name: string){
       super(name);
