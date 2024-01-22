@@ -65,7 +65,7 @@ const yuJin = new Idol({
 /**
  * keyof 함께 사용하기
  * 
- * generic에서 keyof 키워드를 활용해 객체가 가진 키값들만 접근할 수 있도록 제한할 수 있다.
+ * generic에서 keyof 키워드를 활용해 generic 타입에 존재하는 키값들만 접근할 수 있도록 제한할 수 있다.
  */
 const testObj = {
   a: 1,
