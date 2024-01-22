@@ -35,7 +35,7 @@ genericChild.message; // string | undefined
  * 이를 통해 부모 클래스이거나 부모 클래스를 상속받지 않은 형태는
  * generic으로 사용할 수 없도록 제한할 수 있다.
  * 
- * => 1_generic_in_method에서 다룬 생성자 내용 참조.
+ * => 1_generic_in_function에서 다룬 생성자 내용 참조.
  */
 interface BaseGeneric {
   name: string;
