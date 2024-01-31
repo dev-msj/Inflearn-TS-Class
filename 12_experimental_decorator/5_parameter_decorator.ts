@@ -26,4 +26,4 @@ function LogParam(target: any, propertyKey: string, paramIndex: number){
   console.log(`${paramIndex}번째 파라미터인 ${propertyKey}가 입력됐습니다.`); // 0번째 파라미터인 dance가 입력됐습니다.
 }
 
-// property 데코레이터와 동일하게 property descripter가 없으므로 값 변경은 불가능하다.
+// property 데코레이터와 동일하게 property descriptor가 없으므로 값 변경은 불가능하다.

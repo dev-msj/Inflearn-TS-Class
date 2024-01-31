@@ -21,4 +21,4 @@ function PropertyLogger(target: any, propertyKey: string){
   console.log(`${propertyKey} 값이 정의 됐습니다.`);
 }
 
-// property descripter가 없으므로 값 변경은 불가능하다.
+// property descriptor가 없으므로 값 변경은 불가능하다.

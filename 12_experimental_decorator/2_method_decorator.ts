@@ -22,7 +22,7 @@ class Idol {
 // target - static method에 데코레이팅을 할 경우 생성자 함수 => [class Idol]
 //        - instance method에 데코레이팅 할경우 인스턴스의 prototype => {}
 // propertyKey - 메서드의 이름
-// descript - property descriptor
+// descriptor - property descriptor
 function TestMethodDecorator(target: any, propertyKey: string, descriptor: PropertyDescriptor){
   console.log('LogCall');
   console.log('--- target ---');
@@ -39,7 +39,7 @@ console.log('---- run dance ----');
 rose.dance(); // dance를 한 번 더 실행해도 데코레이터가 추가 동작하지 않는 것을 확인할 수 있다.
 
 // factory 함수를 통해 인자를 받을 수 있는 데코레이터로 만들 수 있다.
-// 데코레이터를 통해 PropertyDescripter를 자유자재로 바꿀 수 있다는 장점이 있다.
+// 데코레이터를 통해 Propertydescriptor를 자유자재로 바꿀 수 있다는 장점이 있다.
 function Configurable(configurable: boolean){
   return function(target: any, propertyKey: string, descriptor: PropertyDescriptor){
     descriptor.configurable = configurable;
@@ -50,7 +50,7 @@ function Configurable(configurable: boolean){
 // 여기서 Configurable 데코레이터를 통해 dance의 configurable이 데코레이터의 파라메터값으로 변경되는 것을 확인할 수 있다.
 console.log(Object.getOwnPropertyDescriptors(Idol.prototype));
 
-// PropertyDescripter를 조작할 때 value를 변경하는 일이 가장 많다.
+// Propertydescriptor를 조작할 때 value를 변경하는 일이 가장 많다.
 function MethodCallLogger(env: string){
   return function(target: any, propertyKey: string, descriptor: PropertyDescriptor){
     // 기존 값을 할당 => 현재 대상은 "dance 메서드"
