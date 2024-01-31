@@ -1,7 +1,7 @@
 /**
  * method decorator
  * 
- * 메서드에 데코레이터를 추가하여 메서드 정보를 조회하거나 property descriptor를 조작할 수 있다.
+ * 메서드에 데코레이터를 지정하여 메서드 정보를 조회하거나 property descriptor를 조작할 수 있다.
  */
 class Idol {
   name: string;
