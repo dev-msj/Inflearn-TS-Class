@@ -1,0 +1,1 @@
+`npm install --save-dev` 혹은 `npm i -D`를 통해 `reflect-metadata` 패키지를 설치해준다.
